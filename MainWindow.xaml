@@ -1,0 +1,18 @@
+﻿<Window x:Class="personalizacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:personalizacion"
+        xmlns:MisControles="clr-namespace:personalizacion.CustomControls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <MisControles:ParaValidaciones x:Name="ValidacionCP" TipoValidacion="cp"/>
+        <MisControles:ParaValidaciones x:Name="ValidacionTLF" Margin="0,76,0,-76" TipoValidacion="tlf"/>
+        <MisControles:ParaValidaciones x:Name="ValidacionDNI" Margin="0,161,0,-161" TipoValidacion="dni"/>
+        <Label Content="Código postal:" HorizontalAlignment="Left" Margin="33,105,0,0" VerticalAlignment="Top"/>
+        <Label Content="Teléfono:" HorizontalAlignment="Left" Margin="64,179,0,0" VerticalAlignment="Top"/>
+        <Label Content="DNI:" HorizontalAlignment="Left" Margin="86,267,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
